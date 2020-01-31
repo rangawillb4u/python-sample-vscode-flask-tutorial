@@ -17,4 +17,3 @@ requests==2.21.0
 pyfcm
 firebase_admin
 psycopg2-binary
-psycopg2==2.8.1
