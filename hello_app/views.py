@@ -29,7 +29,7 @@ BASE_FOLDER_PATH = os.path.abspath(__file__ + "/../")
 app = Flask(__name__)
 app.config["DEBUG"] = True
 app.config["JSON_SORT_KEYS"] = False
-app
+#CORS(app)
 
 cred = credentials.Certificate(os.path.abspath(BASE_FOLDER_PATH + '/firebase_key.json'))
 firebase_admin.initialize_app(cred)
