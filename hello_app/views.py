@@ -29,13 +29,13 @@ BASE_FOLDER_PATH = os.path.abspath(__file__ + "/../")
 app = Flask(__name__)
 app.config["DEBUG"] = True
 app.config["JSON_SORT_KEYS"] = False
-#CORS(app)
+CORS(app)
 
-cred = credentials.Certificate(os.path.abspath(BASE_FOLDER_PATH + '/firebase_key.json'))
-firebase_admin.initialize_app(cred)
+#cred = credentials.Certificate(os.path.abspath(BASE_FOLDER_PATH + '/firebase_key.json'))
+#firebase_admin.initialize_app(cred)
 
-push_service = FCMNotification(
-    api_key="AAAAnEhcLJI:APA91bGTpCACkSe4f-dH2pP7hTG4qf8iz8crt-FFsXwTurBCwwafdJ4WcgsDtvkufLQNsukCcgXuXyH0pPY0p8t9siWZ_zlVhtEEIRQLtydpp774t2CcWbQWfwiEFQZY_ujLDN_j9XV9")
+#push_service = FCMNotification(
+#    api_key="AAAAnEhcLJI:APA91bGTpCACkSe4f-dH2pP7hTG4qf8iz8crt-FFsXwTurBCwwafdJ4WcgsDtvkufLQNsukCcgXuXyH0pPY0p8t9siWZ_zlVhtEEIRQLtydpp774t2CcWbQWfwiEFQZY_ujLDN_j9XV9")
 
 import logging
 
